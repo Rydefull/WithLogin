@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sample-list {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.sample-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sample-list li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sample-list li:hover {
+  background-color: #e0e0e0;
+}
+
+.right-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.code-input-container {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+}
+
+.code-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: monospace;
+}
+
+.code-input-container button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.code-input-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Добавляем стили для выбора типа возвращаемого значения */
+.return-type-selector {
+  margin: 10px 0;
+}
+
+.return-type-selector label {
+  margin-right: 10px;
+}
+
+.return-type-selector select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.output-console {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+  flex-grow: 1;
+  height: 40%;
+}
+
+.output-console pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  flex-grow: 1;
+}
